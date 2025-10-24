@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     Acteurs <|-- Apprenants 
     Acteurs <|-- Organismes
@@ -28,3 +29,4 @@ classDiagram
     +recruter apprenant()
     +proposer stage()
     }
+```
