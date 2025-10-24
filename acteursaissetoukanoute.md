@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     Acteur <|-- Apprenants
     Acteur <|-- Organismes
@@ -31,3 +32,4 @@ classDiagram
       +texte Competences recherchees
       +run()
     }
+```
