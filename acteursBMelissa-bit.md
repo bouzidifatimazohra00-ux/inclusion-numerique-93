@@ -1,5 +1,5 @@
 ```mermaid
-lassDiagram
+classDiagram
     Acteurs <|-- Apprenants 
     Acteurs <|-- Organismes
     Acteurs <|-- Entreprises
