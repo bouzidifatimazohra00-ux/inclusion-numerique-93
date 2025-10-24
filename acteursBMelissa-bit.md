@@ -1,16 +1,16 @@
 ```mermaid
-classDiagram
+lassDiagram
     Acteurs <|-- Apprenants 
     Acteurs <|-- Organismes
     Acteurs <|-- Entreprises
-    Acteurs: Niveau Bac 
+    Acteurs: Niveau d'etude 
     Acteurs: Maitise des langues
-    Acteurs: Compétences numériques()
+    Acteurs: Competences numeriques()
     Acteurs: 
     class Apprenants{
        +String nom
     +int age
-    +String niveau d'étude 
+    +String niveau d'etude 
     +String objectif professionnel ()
     +String competences numeriques ()
     }
