@@ -15,8 +15,8 @@ direction TB
 	   chômeur
        travailleur
    }
-    Institut --> Apprenant   
-    Responsable --> Institut
-    Responsable --> Apprenant 
+    Institut --> Apprenant:forme  
+    Responsable --> Institut:gère
+    Responsable --> Apprenant:supervise
 ```
 
