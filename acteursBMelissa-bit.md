@@ -1,12 +1,16 @@
 ```mermaid
 classDiagram
-    Acteurs <|-- Apprenants 
+    Acteurs <|-- Apprenants
     Acteurs <|-- Organismes
     Acteurs <|-- Entreprises
-    Acteurs: Niveau d'etude 
-    Acteurs: Maitise des langues
-    Acteurs: Competences numeriques()
-    Acteurs: 
+
+    class Acteurs {
+        +String nom
+        +String niveauEtude
+        +String maitriseLangues
+        +String competencesNumeriques
+        +afficherCompetencesNumeriques()
+    }
     class Apprenants{
        +String nom
     +int age
@@ -21,12 +25,12 @@ classDiagram
     +formerApprenant()
     +accompagner insertion()
     }
-    class Entreprises{
-      +String nom
+    class Entreprises {
+    +String nom
     +String secteur
-    +bool propose alternance
-    +String besoins competences
-    +recruter apprenant()
-    +proposer stage()
-    }
+    +bool proposeAlternance
+    +String besoinsCompetences
+    +recruterApprenant()
+    +proposerStage()
+}
 ```
