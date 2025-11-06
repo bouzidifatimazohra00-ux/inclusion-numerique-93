@@ -18,7 +18,7 @@ Ces données brutes permettent d’analyser l’insertion professionnelle des di
 
 ## Data tables
 
-La structuration des données se fait sous forme de tables, par exemple :  
+La structuration des données se fait sous forme de tables: 
 
 | Propriété         | Valeur              | Critère                        |
 |------------------|-------------------|-------------------------------|
@@ -29,11 +29,9 @@ La structuration des données se fait sous forme de tables, par exemple :
 | Salaire moyen     | 32 000 €          | Annuel brut                   |
 | Type de poste     | Développeur Front | Secteur numérique             |
 
-Cette table peut être complétée par d’autres colonnes : expérience précédente, type de contrat, entreprise, satisfaction au travail, etc.
+
 
 ## Structures visuelles
-
-Pour rendre les données compréhensibles et navigables, plusieurs types de visualisations sont envisagés :  
 
 - **Pie chart (diagramme circulaire)** : répartition des types de contrats ou des secteurs d’activité.  
 - **Bar chart (diagramme en barres)** : nombre de diplômés par type de formation ou par région.  
