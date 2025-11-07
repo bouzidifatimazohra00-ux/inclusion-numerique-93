@@ -2,62 +2,67 @@
 ```mermaid
 classDiagram
      
-    Oragnisme <|-- Pro_org
-    Oragnisme <|-- Edu_org
-    Pro_org <|-- Entreprise
-    Pro_org <|-- Association
-    Edu_org <|-- Association
-    Edu_org <|-- Centre-de-formation
+    Organisme  <|-- Entreprise
+    Organisme  <|-- Association
+    Organisme  <|-- Centre-de-formation
+    Entreprise <|-- Job
+   
     
-    
-    class Oragnisme{
+    class Organisme {
         +String name
         +isPublic()
         +isActive()
-        +String domaine
+        +String secteurActivite
+        +string codeAPE
+        +string codeSiert
         +int Capacité
     }
     
     class Association {
-        -MettreEnRelation()
+          +String contactReferent
+          +int nbApprenantsSuivis
+          -MettreEnRelation()
     }
     
     class Centre-de-formation{
-        +string typeOrganisme
-        +string intituleFormation
-        +string certification
-        +date dateDebut
-        +date dateFin
+        +String intituleFormation
+        +String certification
+        +Date dateDebut
+        +Date dateFin
         +int dureeHeures
         +string financement
-        +string format (presentiel/distanciel)
+        +isSurPlace()
         -Former()     
     }
       
     class Entreprise{
-        +string secteurActivite
-        +string typeContrat
-        +string relationOrganisme (partenaire, stage, recrutement)
+        
         +string contactRH
         -Recrute()
     }
+
+     class Job{
+ +Date dateDebut
+        +Date dateFin
+          +string typeContrat
+    +string posteOccupe
+          +string secteurActivite
+          +float salaireMensuel
+          +string coherenceFormationEmploi
+     }
+
+class formation {
+}
         
     class Etudiant{
-        + String name
-        + String DOB
-         +string prenom
-  +int age
-  +string genre
-  +string niveauEtudes
-  +bool emploiApresFormation
-  +string typeContrat
-  +string posteOccupe
-  +string secteurActivite
-  +float salaireMensuel
-  +string coherenceFormationEmploi
-        
-        +bool enFormation
-        +run()
-        -Candidater()
+          + String name
+          + String DOB
+          + String prenom
+          +Job job
+          +string genre
+          +string niveauEtudes
+          +bool emploiApresFormation
+          +bool enFormation
+          -Candidater()
     }
 ```
