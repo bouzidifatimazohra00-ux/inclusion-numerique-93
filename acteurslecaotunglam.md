@@ -19,19 +19,24 @@ classDiagram
     }
     
     class Association {
+        - MettreEnRelation()
     }
     
     class Centre-de-formation{
-      
-    }
-    class Entreprise{
+        - Former()
         
     }
+      
+    class Entreprise{
+        - Recrute()
+    }
+        
     class Etudiant{
         + String name
         + String DOB
-        + 
-      +bool enFormation
-      +run()
+        
+        +bool enFormation
+        +run()
+        - Candidater()
     }
 ```
