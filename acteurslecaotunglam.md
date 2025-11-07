@@ -19,24 +19,45 @@ classDiagram
     }
     
     class Association {
-        - MettreEnRelation()
+        -MettreEnRelation()
     }
     
     class Centre-de-formation{
-        - Former()
-        
+        +string typeOrganisme
+        +string intituleFormation
+        +string certification
+        +date dateDebut
+        +date dateFin
+        +int dureeHeures
+        +string financement
+        +string format (presentiel/distanciel)
+        -Former()     
     }
       
     class Entreprise{
-        - Recrute()
+        +string secteurActivite
+        +string typeContrat
+        +string relationOrganisme (partenaire, stage, recrutement)
+        +string contactRH
+        -Recrute()
     }
         
     class Etudiant{
         + String name
         + String DOB
+         +string prenom
+  +int age
+  +string genre
+  +string niveauEtudes
+  +bool emploiApresFormation
+  +string typeContrat
+  +string posteOccupe
+  +string secteurActivite
+  +float salaireMensuel
+  +string coherenceFormationEmploi
         
         +bool enFormation
         +run()
-        - Candidater()
+        -Candidater()
     }
 ```
