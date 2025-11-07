@@ -11,9 +11,10 @@ direction TB
       enseignants}
 
     class Apprenant {
-	   Recherche d’emploi
-	   chômeur
-       travailleur
+	   jeune diplome
+	   sans diplome
+       Salarie en activiter
+       recovention professionnelle
    }
     Institut --> Apprenant:forme  
     Responsable --> Institut:gère
