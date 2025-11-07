@@ -3,18 +3,20 @@
 classDiagram
 direction TB
     class Institut {
-	    +école
-	    +centre de formation
-	    +université}
+	    +association
+	    +centre de formation}
     class Responsable {
       administration
       coordinateurs
       enseignants}
 
     class Apprenant {
-	   Jeunes diplômés
-	   Jeunes nan diplômés
+	   Recherche d’emploi
+	   chômeur
+       travailleur
    }
-    Institut <|-- Apprenant
-    Institut <|-- Responsable
+    Institut --> Apprenant:forme  
+    Responsable --> Institut:gère
+    Responsable --> Apprenant:supervise
 ```
+
