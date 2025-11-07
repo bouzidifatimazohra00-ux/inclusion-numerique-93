@@ -1,5 +1,4 @@
 ```mermaid
-
 classDiagram
     %% Héritage
     Acteur <|-- Apprenant
@@ -7,6 +6,9 @@ classDiagram
     Acteur <|-- Entreprise
     Acteur <|-- Responsable
     Apprenant <|-- Acces 
+    Formation<|--Accompagnatrice
+    Entreprise<|--plateformesEmploi
+    Formation<|--plateformesEmploi
     %% Classe mère Acteur
     class Acteur {
                 
