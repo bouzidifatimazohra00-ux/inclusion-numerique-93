@@ -2,9 +2,14 @@
 ```mermaid
 classDiagram
      
-    Oragnisme <|-- Centre-de-formation
-    Oragnisme <|-- Entreprise
-    Oragnisme <|-- Association
+    Oragnisme <|-- Pro_org
+    Oragnisme <|-- Edu_org
+    Pro_org <|-- Association
+    Edu_org <|-- Association
+    Pro_org <|-- Entreprise
+    Edu_org <|- Centre-de-formation
+    
+    
     class Oragnisme{
         +String name
         +isPublic()
@@ -12,13 +17,18 @@ classDiagram
         +String domaine
         +int Capacité
     }
-class Association {
-}
+    
+    class Org_prestataire{
+        
+    }
+    class Association {
+    }
+    
     class Centre-de-formation{
       
     }
     class Entreprise{
-    
+        
     }
     class Etudiant{
         + String name
