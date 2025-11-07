@@ -6,6 +6,7 @@ classDiagram
     Organisme  <|-- Association
     Organisme  <|-- Centre-de-formation
     Entreprise <|-- Job
+    Centre-de-formation <|-- Formation
    
     
     class Organisme {
@@ -25,13 +26,8 @@ classDiagram
     }
     
     class Centre-de-formation{
-        +String intituleFormation
-        +String certification
-        +Date dateDebut
-        +Date dateFin
-        +int dureeHeures
-        +string financement
-        +isSurPlace()
+          +String contactReferent
+       +int nbApprenants
         -Former()     
     }
       
@@ -51,7 +47,14 @@ classDiagram
           +string coherenceFormationEmploi
      }
 
-class formation {
+class Formation {
+          +String intituleFormation
+        +String certification
+        +Date dateDebut
+        +Date dateFin
+        +int dureeHeures
+ +string financement
+        +isSurPlace()
 }
         
     class Etudiant{
@@ -59,6 +62,7 @@ class formation {
           + String DOB
           + String prenom
           +Job job
+          + Formation formation
           +string genre
           +string niveauEtudes
           +bool emploiApresFormation
