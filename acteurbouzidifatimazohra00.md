@@ -6,12 +6,11 @@ classDiagram
     Acteur <|-- Entreprise
     Acteur <|-- Responsable
     Apprenant <|-- Acces 
-    Formation<|--Accompagnatrice
+    Formation<|--StructureAccompagnatrice
     Entreprise<|--plateformesEmploi
     Formation<|--plateformesEmploi
-    %% Classe mère Acteur
+     %% Classe mère Acteur
     class Acteur {
-                
         +string nom
         +string region
         +string adresse
@@ -19,6 +18,7 @@ classDiagram
         +string telephone
 
     }
+
 
     %% Classe Apprenant
     class Apprenant {
@@ -40,6 +40,8 @@ classDiagram
         +int Entretiens
         +string Entretien (présentiel/distanciel)
         +string nbresultatEntretien}
+            
+    
 
     %% Classe Formation
     class Formation {
@@ -49,6 +51,8 @@ classDiagram
         +string modalite (presentiel/distanciel)
         +rytme ()
     }
+ 
+    
 
     %% Classe Entreprise
     class Entreprise {
@@ -57,6 +61,10 @@ classDiagram
         +string relationOrganisme (partenaire, stage, recrutement)
         +string contactRH
     }
+         
+  
+
+     
 
     %% Classe Responsable
     class Responsable {
@@ -64,6 +72,22 @@ classDiagram
         +string service
         +string suiviApprenants
         +string coordinationFormateurs
+    }
+  
+    %% Nouvelle Classe StructureAccompagnatrice
+    class StructureAccompagnatrice  {
+        +string typeStructure
+        +string typePertenariat
+        +string role (orientation, suivi, financement)
+
+    }
+
+    %% Nouvelle Classe plateformesEmploi
+    class plateformesEmploi {
+        +string typePlateforme
+        +string secteur d’activite 
+        +string modalite de candidature 
+
     }
 ```
 
