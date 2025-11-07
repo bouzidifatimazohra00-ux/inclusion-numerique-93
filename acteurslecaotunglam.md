@@ -4,9 +4,9 @@ classDiagram
      
     Oragnisme <|-- Pro_org
     Oragnisme <|-- Edu_org
+    Pro_org <|-- Entreprise
     Pro_org <|-- Association
     Edu_org <|-- Association
-    Pro_org <|-- Entreprise
     Edu_org <|-- Centre-de-formation
     
     
@@ -18,9 +18,6 @@ classDiagram
         +int Capacité
     }
     
-    class Org_prestataire{
-        
-    }
     class Association {
     }
     
