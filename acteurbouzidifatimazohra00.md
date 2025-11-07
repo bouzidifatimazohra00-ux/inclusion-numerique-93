@@ -1,61 +1,68 @@
 ```mermaid
 
 classDiagram
-direction TB
+    %% Héritage
+    Acteur <|-- Apprenant
+    Acteur <|-- Formation
+    Acteur <|-- Entreprise
+    Acteur <|-- Responsable
+    Apprenant <|-- Acces 
+    %% Classe mère Acteur
+    class Acteur {
+                
+        +string nom
+        +string region
+        +string adresse
+        +string email
+        +string telephone
 
-%% --- Héritage ---
-Acteur <|-- Apprenant
-Acteur <|-- Institut
-Acteur <|-- Responsable
+    }
 
-%% --- Classe Acteur ---
-class Acteur {
-    +int id
-    +string nom
-    +string département 
-    +string adresse
-    +string email
-    +string telephone
+    %% Classe Apprenant
+    class Apprenant {
+        +string prenom
+        +int age
+        +string genre
+        +string niveauEtudes
+        +bool situation avantFormation
+        +string typeContrat
+        +string posteOccupe
+        +string secteurActivite
+        +float salaireMensuel
+        +string coherenceFormationEmploi
 
-}
+    }
+      %% Nouvelle Classe Acces
+    class Acces{
+        +string plateformes
+        +int Entretiens
+        +string Entretien (présentiel/distanciel)
+        +string nbresultatEntretien}
 
-%% --- Classe Apprenant ---
-class Apprenant {
-    +string prenom
-    +int age
-    +string genre
-    +string niveauEtudes
-    +string situationAvantFormation
-    +bool emploiApresFormation
-    +string typeContrat
-    +string posteOccupe
-    +string secteurActivite
-    +float salaireMensuel
-}
+    %% Classe Formation
+    class Formation {
+     +string typeFormation
+        +string intituleFormation
+        +string certification
+        +string modalite (presentiel/distanciel)
+        +rytme ()
+    }
 
-%% --- Classe Institut ---
-class Institut {
-    +string typeFormation
-    +string programmeFormation
-    +string partenaires
-    +string accompagnementInsertion
-    +string modaliteFormation
-}
+    %% Classe Entreprise
+    class Entreprise {
+        +string secteurActivite
+        +string typeContrat
+        +string relationOrganisme (partenaire, stage, recrutement)
+        +string contactRH
+    }
 
-%% --- Classe Responsable ---
-class Responsable {
-    +string poste
-    +string service
-    +string fonction
-    +string suiviApprenants
-    +string coordinationFormateurs
-}
-
-%% --- Relations ---
-Institut "1" --> "*" Apprenant : forme
-Responsable "1" --> "*" Apprenant : supervise
-Responsable "1" --> "1" Institut : travaille dans
-Apprenant "1" --> "1" Institut : bénéficie
+    %% Classe Responsable
+    class Responsable {
+        +string poste
+        +string service
+        +string suiviApprenants
+        +string coordinationFormateurs
+    }
 ```
 
 
