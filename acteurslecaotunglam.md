@@ -7,7 +7,7 @@ classDiagram
     Pro_org <|-- Association
     Edu_org <|-- Association
     Pro_org <|-- Entreprise
-    Edu_org <|- Centre-de-formation
+    Edu_org <|-- Centre-de-formation
     
     
     class Oragnisme{
