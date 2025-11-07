@@ -9,7 +9,7 @@ classDiagram
         +String niveauEtude
         +String maitriseLangues
         +String competencesNumeriques
-        +afficherCompetencesNumeriques()
+       
     }
     class Apprenants{
        +String nom
