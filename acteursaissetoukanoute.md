@@ -1,35 +1,53 @@
 ```mermaid
 classDiagram
-    Acteur <|-- Apprenants
-    Acteur <|-- Organismes
-    Acteur <|-- Entreprises
-    Acteur : Lieu geographique
-    Acteur : Type d'acteur
-    Acteur : Satisfaction
-    Acteur: +isMammal()
-    Acteur: +mate()
-    class Apprenants{
-      +texte Niveau de formation
-      +texte Genre
-      +texte Age
-      +texte Duree de la formation
+    Acteur <|-- Apprenant
+    Acteur <|-- OrganismeFormation
+    Acteur <|-- Entreprise
+    Acteur <|-- StructureAccompagnatrice
+    Acteur : +int id
+    Acteur : +string nom
+    Acteur : +string region
+    Acteur : +string adresse
+    Acteur : +string email
+    Acteur : +string telephone
+    Acteur : +string typeActeur
+    Acteur : +string codeAPE
 
-      +swim()
-      +quack()
-    }
-    class Organismes{
-      +texte Taux de reussite
-      +texte Capacite d'accueil
-      +texte Type de formation
-      +texte Specialite
+class Apprenant {
+  +string prenom
+  +int age
+  +string genre
+  +string niveauEtudes
+  +bool emploiApresFormation
+  +string typeContrat
+  +string posteOccupe
+  +string secteurActivite
+  +float salaireMensuel
+  +string coherenceFormationEmploi
+}
 
-      -canEat()
-    }
-    class Entreprises{
-      +texte Salaires post-formations
-      +texte Secteur d activite
-      +texte Type de contrat
-      +texte Competences recherchees
-      +run()
-    }
+class OrganismeFormation {
+  +string typeOrganisme
+  +string intituleFormation
+  +string certification
+  +date dateDebut
+  +date dateFin
+  +int dureeHeures
+  +string financement
+  +string format (presentiel/distanciel)
+}
+
+class Entreprise {
+  +string secteurActivite
+  +string typeContrat
+  +string relationOrganisme (partenaire, stage, recrutement)
+  +string contactRH
+}
+
+class StructureAccompagnatrice {
+  +string typeStructure
+  +string contactReferent
+  +int nbApprenantsSuivis
+  +string role (orientation, suivi, financement)
+}
 ```
