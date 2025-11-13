@@ -37,7 +37,9 @@ class Apprenant {
   +string aCommeStructure
   +string programmeSuivi       
   +string typeDispositif       
-  +string financeurProgramme   
+  +string financeurProgramme
+  -Contrat contrat
+  -Formation formation  
   +float calculerSalaire()
   +string obtenirProgramme()
   +liste obtenirContrats()
@@ -91,5 +93,15 @@ class Indicateur {
   +float calculerIndicateur()
   +float comparaisonAnneePrecedente()
   +bool estConforme()
+}
+
+class Formation {
+  +String intituleFormation
+  +String certification
+  +Date dateDebut
+  +Date dateFin
+  +int dureeHeures
+  +string financement
+  +isSurPlace()
 }
 ```
