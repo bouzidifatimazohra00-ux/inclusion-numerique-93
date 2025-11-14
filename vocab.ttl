@@ -22,7 +22,7 @@
 
 ipn:FormationOntology a owl:Ontology ;
     rdfs:label "Insertion professionelle numérique" ;
-    rdfs:comment "//////" .
+    rdfs:comment "Vocabulaires liés à l’insertion professionnelle numérique" .
 
 #############################################
 # CLASSES
