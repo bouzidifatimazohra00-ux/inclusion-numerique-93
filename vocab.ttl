@@ -1,0 +1,160 @@
+#############################################
+# PREFIXES
+#############################################
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix teach:   <http://linkedscience.org/teach/ns#> .
+@prefix iso37120:<http://ontology.eil.utoronto.ca/ISO37120.owl#> .
+@prefix istex:   <http://data.istex.fr/ontology/istex#> .
+@prefix edu:     <http://purl.org/NET/EDU/> .
+@prefix esco:    <http://data.europa.eu/esco/model/2.0.0/> .
+@prefix acrt:    <http://example.org/acrt#> .
+@prefix sim:     <http://example.org/sim#> .
+
+@prefix ex:      <http://example.org/formation#> .
+
+#############################################
+# ONTOLOGY DECLARATION
+#############################################
+
+ex:FormationOntology a owl:Ontology ;
+    rdfs:label "Ontology for Formation, Actors, Contracts, Indicators" ;
+    rdfs:comment "Generated from class diagram and aligned with TEACH, EDU, ESCO, ISO37120, ISTEX, ACRT, SIM vocabularies." .
+
+#############################################
+# CLASSES
+#############################################
+
+ex:Acteur a owl:Class ;
+    rdfs:label "Acteur" .
+
+ex:Apprenant a owl:Class ;
+    rdfs:subClassOf ex:Acteur ;
+    rdfs:label "Apprenant" ;
+    rdfs:subClassOf edu:Student .
+
+ex:Professionnels a owl:Class ;
+    rdfs:subClassOf ex:Acteur ;
+    rdfs:label "Professionnels" ;
+    rdfs:subClassOf esco:Occupation .
+
+ex:OrganismeFormation a owl:Class ;
+    rdfs:subClassOf ex:Professionnels ;
+    rdfs:label "Organisme de Formation" ;
+    rdfs:subClassOf edu:EducationalOrganisation .
+
+ex:Entreprise a owl:Class ;
+    rdfs:subClassOf ex:Professionnels ;
+    rdfs:label "Entreprise" .
+
+ex:StructureAccompagnatrice a owl:Class ;
+    rdfs:subClassOf ex:Professionnels ;
+    rdfs:label "Structure Accompagnatrice" .
+
+ex:Contrat a owl:Class ;
+    rdfs:label "Contrat" .
+
+ex:Indicateur a owl:Class ;
+    rdfs:label "Indicateur" ;
+    rdfs:subClassOf iso37120:Indicator .
+
+ex:Formation a owl:Class ;
+    rdfs:label "Formation" ;
+    rdfs:subClassOf teach:Course ;
+    rdfs:subClassOf edu:LearningResource .
+
+#############################################
+# OBJECT PROPERTIES
+#############################################
+
+ex:aCommeStructure a owl:ObjectProperty ;
+    rdfs:domain ex:Apprenant ;
+    rdfs:range ex:StructureAccompagnatrice .
+
+ex:aContrat a owl:ObjectProperty ;
+    rdfs:domain ex:Apprenant ;
+    rdfs:range ex:Contrat .
+
+ex:aFormation a owl:ObjectProperty ;
+    rdfs:domain ex:Apprenant ;
+    rdfs:range ex:Formation .
+
+ex:aEntreprise a owl:ObjectProperty ;
+    rdfs:domain ex:Contrat ;
+    rdfs:range ex:Entreprise .
+
+ex:hasCertification a owl:ObjectProperty ;
+    rdfs:domain ex:OrganismeFormation ;
+    rdfs:range acrt:Certification .
+
+#############################################
+# DATATYPE PROPERTIES
+#############################################
+
+### Acteur
+ex:id a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:int .
+ex:nom a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:string .
+ex:region a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:string .
+ex:adresse a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:string .
+ex:email a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:string .
+ex:telephone a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:string .
+ex:typeActeur a owl:DatatypeProperty ; rdfs:domain ex:Acteur ; rdfs:range xsd:string .
+
+### Professionnels
+ex:codeAPE a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:string .
+ex:secteurActivite a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:string .
+ex:statutJuridique a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:string .
+ex:anneeCreation a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:int .
+ex:nbEmployes a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:int .
+ex:siteWeb a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:string .
+ex:contactPrincipal a owl:DatatypeProperty ; rdfs:domain ex:Professionnels ; rdfs:range xsd:string .
+
+### Apprenant
+ex:prenom a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:string .
+ex:age a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:int .
+ex:genre a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:string .
+ex:niveauEtudes a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:string .
+ex:programmeSuivi a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:string .
+ex:typeDispositif a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:string .
+ex:financeurProgramme a owl:DatatypeProperty ; rdfs:domain ex:Apprenant ; rdfs:range xsd:string .
+
+### Organisme Formation
+ex:typeOrganisme a owl:DatatypeProperty ; rdfs:domain ex:OrganismeFormation ; rdfs:range xsd:string .
+ex:intituleFormation a owl:DatatypeProperty ; rdfs:domain ex:OrganismeFormation ; rdfs:range xsd:string .
+ex:certification a owl:DatatypeProperty ; rdfs:domain ex:OrganismeFormation ; rdfs:range xsd:string .
+ex:dureeHeures a owl:DatatypeProperty ; rdfs:domain ex:OrganismeFormation ; rdfs:range xsd:int .
+ex:format a owl:DatatypeProperty ; rdfs:domain ex:OrganismeFormation ; rdfs:range xsd:string .
+
+### Entreprise
+ex:relationOrganisme a owl:DatatypeProperty ; rdfs:domain ex:Entreprise ; rdfs:range xsd:string .
+ex:contactRH a owl:DatatypeProperty ; rdfs:domain ex:Entreprise ; rdfs:range xsd:string .
+
+### Structure Accompagnatrice
+ex:typeStructure a owl:DatatypeProperty ; rdfs:domain ex:StructureAccompagnatrice ; rdfs:range xsd:string .
+ex:contactReferent a owl:DatatypeProperty ; rdfs:domain ex:StructureAccompagnatrice ; rdfs:range xsd:string .
+ex:role a owl:DatatypeProperty ; rdfs:domain ex:StructureAccompagnatrice ; rdfs:range xsd:string .
+
+### Contrat
+ex:idContrat a owl:DatatypeProperty ; rdfs:domain ex:Contrat ; rdfs:range xsd:string .
+ex:typeContrat a owl:DatatypeProperty ; rdfs:domain ex:Contrat ; rdfs:range xsd:string .
+ex:dateDebut a owl:DatatypeProperty ; rdfs:domain ex:Contrat ; rdfs:range xsd:date .
+ex:dateFin a owl:DatatypeProperty ; rdfs:domain ex:Contrat ; rdfs:range xsd:date .
+ex:statut a owl:DatatypeProperty ; rdfs:domain ex:Contrat ; rdfs:range xsd:string .
+
+### Indicateur
+ex:nomIndicateur a owl:DatatypeProperty ; rdfs:domain ex:Indicateur ; rdfs:range xsd:string .
+ex:definition a owl:DatatypeProperty ; rdfs:domain ex:Indicateur ; rdfs:range xsd:string .
+ex:unite a owl:DatatypeProperty ; rdfs:domain ex:Indicateur ; rdfs:range xsd:string .
+ex:valeur a owl:DatatypeProperty ; rdfs:domain ex:Indicateur ; rdfs:range xsd:float .
+ex:annee a owl:DatatypeProperty ; rdfs:domain ex:Indicateur ; rdfs:range xsd:int .
+
+### Formation
+ex:intitule a owl:DatatypeProperty ; rdfs:domain ex:Formation ; rdfs:range xsd:string .
+ex:formationCertification a owl:DatatypeProperty ; rdfs:domain ex:Formation ; rdfs:range xsd:string .
+ex:formationDebut a owl:DatatypeProperty ; rdfs:domain ex:Formation ; rdfs:range xsd:date .
+ex:formationFin a owl:DatatypeProperty ; rdfs:domain ex:Formation ; rdfs:range xsd:date .
+ex:formationDureeHeures a owl:DatatypeProperty ; rdfs:domain ex:Formation ; rdfs:range xsd:int .
+ex:financement a owl:DatatypeProperty ; rdfs:domain ex:Formation ; rdfs:range xsd:string .
