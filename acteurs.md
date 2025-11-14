@@ -34,11 +34,10 @@ class Apprenant {
   +string genre
   +string niveauEtudes
   +string aCommeStructure
-  +string programmeSuivi       
+  -Formation programmeSuivi       
   +string typeDispositif       
   +string financeurProgramme
   -Contrat contrat
-  -Formation formation  
   +float calculerSalaire()
   +string obtenirProgramme()
   +liste obtenirContrats()
