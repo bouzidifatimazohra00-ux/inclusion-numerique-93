@@ -15,7 +15,6 @@ class Acteur {
   +string adresse
   +string email
   +string telephone
-  +string typeActeur
 }
 
 class Professionnels {
