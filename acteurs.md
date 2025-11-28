@@ -8,8 +8,10 @@ Professionnels <|-- OrganismeFormation
 Professionnels <|-- Entreprise
 Professionnels <|-- StructureAccompagnatrice
 
+class Structure{
+}
+
 class Acteur {
-  +int id
   +string nom
   +string region
   +string adresse
@@ -18,6 +20,7 @@ class Acteur {
 }
 
 class Professionnels {
+  -acteur aCommeActeur
   +string codeAPE
   +string secteurActivite
   +string statutJuridique
@@ -33,7 +36,8 @@ class Apprenant {
   +int age
   +string genre
   +string niveauEtudes
-  +string aCommeStructure
+  -acteur aCommeActeur
+  -Structure aCommeStructure
   -Formation programmeSuivi       
   +string typeDispositif       
   +string financeurProgramme
@@ -46,7 +50,7 @@ class Apprenant {
 
 class OrganismeFormation {
   +string typeOrganisme
-  +string intituleFormation
+  +Formation intituleFormation
   +string certification
   +int dureeHeures
   +string format
