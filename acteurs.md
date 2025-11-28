@@ -43,11 +43,13 @@ class Professionnels {
   +string contactPrincipal
   +string contactReferent
   +string role
+  +OrganismeFormation oCommeOrganismeFormation
+  +Entreprise eCommeEntreprise
+  +StructureAccompagnatrice sCommeStructureAccompagnatrice
   +liste obtenirApprenants()            
 }
 
 class OrganismeFormation {
-  +Professionnels pcommeProfessionnel
   +string typeOrganisme
   +liste offresDeFormation()   
   +bool ajouterProgramme(string programmeNom)  
@@ -56,19 +58,19 @@ class OrganismeFormation {
 }
 
 class Entreprise {
-  +Professionnels pcommeProfessionnel
   +string typeOrganisme
   +liste obtenirContrats()
   +bool ajouterPartenaire(string partenaireNom)
 }
 
 class StructureAccompagnatrice {
-  +Professionnels pcommeProfessionnel
   +string typeOrganisme
 }
 
 class Contrat {
-  -acteur aCommeActeur
+  -acteur aCommeApprenant
+  -acteur aCommeEntreprise
+  -acteur aCommeOrganismeFormation
   +string contactRH
   +string idContrat
   +string typeContrat
@@ -76,7 +78,6 @@ class Contrat {
   +date dateFin
   +string statut
   +string apprenantAssocie
-  +string entrepriseAssociee
   +float calculerSalaire()     
   +bool estActif()
   +int dureeContrat()
@@ -94,7 +95,8 @@ class Indicateur {
 }
 
 class Formation {
-  -acteur aCommeActeur
+  -acteur aCommeApprenant
+  -acteur aCommeOrganismeFormation
   +String intituleFormation
   +String certification
   +Date dateDebut
