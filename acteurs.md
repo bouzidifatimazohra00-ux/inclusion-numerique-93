@@ -1,18 +1,11 @@
 ```mermaid
 classDiagram
-Acteur <|-- Apprenant
-Acteur <|-- Professionnel
-
-class Acteur {
+class Apprenant {
   +string nom
-  +string region
+  +string prenom
   +string adresse
   +string email
   +string telephone
-}
-
-class Apprenant {
-  +string prenom
   +int age
   +string genre
   +string niveauEtudes
@@ -22,6 +15,10 @@ class Apprenant {
 }
 
 class Professionnel {
+  +string nom
+  +string adresse
+  +string email
+  +string telephone
   +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
@@ -31,9 +28,9 @@ class Professionnel {
 }
 
 class ContratDeTravail {
-  -Acteur aCommeApprenant
-  -Acteur aCommeEntreprise
-  -Acteur aCommeOrganismeFormation
+  -Apprenant aCommeApprenant
+  -Professionnel aCommeEntreprise
+  -Professionnel aCommeOrganismeFormation
   +string idContrat
   +string typeContrat
   +date dateDebut
@@ -46,8 +43,8 @@ class ContratDeTravail {
 }
 
 class Formation {
-  -Acteur aCommeApprenant
-  -Acteur aCommeOrganismeFormation
+  -Apprenant aCommeApprenant
+  -Professionnel aCommeOrganismeFormation
   +string intituleFormation
   +string certification
   +date dateDebut
