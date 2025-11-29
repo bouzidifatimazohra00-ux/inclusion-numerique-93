@@ -1,12 +1,7 @@
 ```mermaid
 classDiagram
-
 Acteur <|-- Apprenant
-Acteur <|-- Professionnels
-
-Professionnels <|-- OrganismeFormation
-Professionnels <|-- Entreprise
-Professionnels <|-- StructureAccompagnatrice
+Acteur <|-- Professionnel
 
 class Acteur {
   +string nom
@@ -21,57 +16,24 @@ class Apprenant {
   +int age
   +string genre
   +string niveauEtudes
-  -acteur aCommeActeur
-  -Formation programmeSuivi       
-  +string typeDispositif       
+  +string programmeSuivi
+  +string typeDispositif
   +string financeurProgramme
-  -Contrat contrat
-  +float calculerSalaire()
-  +string obtenirProgramme()
-  +liste obtenirContrats()
-  +int calculerAge()
 }
 
-class Professionnels {
-  -acteur aCommeActeur
+class Professionnel {
+  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
+  +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
-  +string statutJuridique
-  +int anneeCreation
-  +int nbEmployes
-  +string siteWeb
-  +string contactPrincipal
-  +string contactReferent
-  +string role
-  +OrganismeFormation oCommeOrganismeFormation
-  +Entreprise eCommeEntreprise
-  +StructureAccompagnatrice sCommeStructureAccompagnatrice
-  +liste obtenirApprenants()            
-}
-
-class OrganismeFormation {
-  +string typeOrganisme
-  +liste offresDeFormation()   
-  +bool ajouterProgramme(string programmeNom)  
-  +float calculerTauxReussite()  
-  +liste obtenirCertifications()  
-}
-
-class Entreprise {
-  +string typeOrganisme
-  +liste obtenirContrats()
-  +bool ajouterPartenaire(string partenaireNom)
-}
-
-class StructureAccompagnatrice {
-  +string typeOrganisme
-}
-
-class Contrat {
-  -acteur aCommeApprenant
-  -acteur aCommeEntreprise
-  -acteur aCommeOrganismeFormation
   +string contactRH
+  +string siteWeb
+}
+
+class ContratDeTravail {
+  -Acteur aCommeApprenant
+  -Acteur aCommeEntreprise
+  -Acteur aCommeOrganismeFormation
   +string idContrat
   +string typeContrat
   +date dateDebut
@@ -81,6 +43,19 @@ class Contrat {
   +float calculerSalaire()     
   +bool estActif()
   +int dureeContrat()
+}
+
+class Formation {
+  -Acteur aCommeApprenant
+  -Acteur aCommeOrganismeFormation
+  +string intituleFormation
+  +string certification
+  +date dateDebut
+  +date dateFin
+  +int dureeHeures
+  +string format
+  +string financement
+  +bool isSurPlace()
 }
 
 class Indicateur {
@@ -94,16 +69,12 @@ class Indicateur {
   +bool estConforme()
 }
 
-class Formation {
-  -acteur aCommeApprenant
-  -acteur aCommeOrganismeFormation
-  +String intituleFormation
-  +String certification
-  +Date dateDebut
-  +Date dateFin
-  +int dureeHeures
-  +string format
-  +string financement
-  +isSurPlace()
-}
+%% Relations simplifiées
+Apprenant --> Formation : suit
+Apprenant --> ContratDeTravail : a
+Professionnel --> ContratDeTravail : propose
+Formation --> Professionnel : dispensée par
+Indicateur --> Apprenant : mesure
+Indicateur --> Professionnel : mesure
+
 ```
