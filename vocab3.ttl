@@ -1,0 +1,120 @@
+#############################################
+# PREFIXES
+#############################################
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix teach:   <http://linkedscience.org/teach/ns#> .
+@prefix iso37120:<http://ontology.eil.utoronto.ca/ISO37120.owl#> .
+@prefix istex:   <http://data.istex.fr/ontology/istex#> .
+@prefix edu:     <http://purl.org/NET/EDU/> .
+@prefix esco:    <http://data.europa.eu/esco/model/2.0.0/> .
+@prefix acrt:    <https://vocab.methodandstructure.com/certification#> .
+@prefix sim:     <http://example.org/sim#> .
+
+@prefix ipn:      <http://example.org/formation#> .
+
+#############################################
+# ONTOLOGY DECLARATION
+#############################################
+
+ipn:FormationOntology a owl:Ontology ;
+    rdfs:label "Insertion Professionnelle Numérique" ;
+    rdfs:comment "Ontologie pour modéliser les acteurs, contrats, formations et indicateurs liés à l'insertion professionnelle numérique." .
+
+
+#############################################
+# CLASSES
+#############################################
+
+ipn:Apprenant a owl:Class ;
+    rdfs:label "Apprenant"@fr ;
+    rdfs:subClassOf edu:Student .
+
+ipn:Professionnel a owl:Class ;
+    rdfs:label "Professionnels"@fr ;
+    rdfs:subClassOf esco:Occupation .
+
+ipn:ContratDeTravail a owl:Class ;
+    rdfs:label "Contrat"@fr .
+
+ipn:Indicateur a owl:Class ;
+    rdfs:label "Indicateur"@fr ;
+    rdfs:subClassOf iso37120:Indicator .
+
+ipn:Formation a owl:Class ;
+    rdfs:label "Formation"@fr ;
+    rdfs:subClassOf teach:Course ;
+    rdfs:subClassOf edu:LearningResource .
+
+
+#############################################
+# OBJECT PROPERTIES
+#############################################
+
+# Relattion Formation, Apprenant et Proffessionnel
+ipn:suit a owl:ObjectProperty ;
+    rdfs:domain ipn:Apprenant ;
+    rdfs:range ipn:Formation ;
+    rdfs:label "suit"@fr ;
+    rdfs:comment "Un apprenant suit une formation."@fr .
+
+ipn:programmeSuivi a owl:ObjectProperty ;
+    rdfs:domain ipn:Apprenant ;
+    rdfs:range ipn:Formation .
+
+ipn:aCommeApprenant a owl:ObjectProperty ;
+    rdfs:domain ipn:Formation ;
+    rdfs:range ipn:Appernant.
+
+ipn:aCommeOrganismeFormation a owl:ObjectProperty ;
+    rdfs:domain ipn:Formation ;
+    rdfs:range ipn:Professionnel.
+
+ipn:dispenseePar a owl:ObjectProperty ;
+    rdfs:domain ipn:Formation ;
+    rdfs:range ipn:Professionnel ;
+    rdfs:label "dispensée par"@fr ;
+    rdfs:comment "Une formation est dispensée par un professionnel."@fr .
+
+# Relattion Contrat, Apprenant et Proffessionnel
+ipn:a a owl:ObjectProperty ;
+    rdfs:domain ipn:Apprenant ;
+    rdfs:range ipn:ContratDeTravail ;
+    rdfs:label "a un contrat de travail"@fr .
+
+ipn:aCommeApprenant a owl:ObjectProperty ;
+    rdfs:domain ipn:ContratDeTravail;
+    rdfs:range ipn:Appernant.
+
+ipn:propose a owl:ObjectProperty ;
+    rdfs:domain ipn:Professionnel ;
+    rdfs:range ipn:ContratDeTravail ;
+    rdfs:label "propose"@fr ;
+    rdfs:comment "Un professionnel propose un contrat de travail."@fr .
+
+ipn:aCommeOrganismeFormation a owl:ObjectProperty ;
+    rdfs:domain ipn:ContratDeTravail  ;
+    rdfs:range ipn:Professionnel.
+
+ipn:aCommeOrganismeEntreprise a owl:ObjectProperty ;
+    rdfs:domain ipn:ContratDeTravail  ;
+    rdfs:range ipn:Professionnel.
+
+# Relation Indicateur, Proffesionnel et Apprenant
+ipn:mesureApprenant a owl:ObjectProperty ;
+    rdfs:domain ipn:Indicateur ;
+    rdfs:range ipn:Apprenant ;
+    rdfs:label "mesure apprenant"@fr .
+
+ipn:mesureProfessionnel a owl:ObjectProperty ;
+    rdfs:domain ipn:Indicateur ;
+    rdfs:range ipn:Professionnel ;
+    rdfs:label "mesure professionnel"@fr .
+
+
+#############################################
+# DATATYPE PROPERTIES
+#############################################

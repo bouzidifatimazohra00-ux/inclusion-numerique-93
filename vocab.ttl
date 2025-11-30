@@ -11,7 +11,7 @@
 @prefix istex:   <http://data.istex.fr/ontology/istex#> .
 @prefix edu:     <http://purl.org/NET/EDU/> .
 @prefix esco:    <http://data.europa.eu/esco/model/2.0.0/> .
-@prefix acrt:    <https://​vocab.methodandstructure.com/​certification# >.
+@prefix acrt:    <https://​vocab.methodandstructure.com/​certification#>.
 @prefix sim:     <http://example.org/sim#> .
 
 @prefix ipn:      <http://example.org/formation#> .
@@ -89,6 +89,15 @@ ipn:aEntreprise a owl:ObjectProperty ;
 ipn:hasCertification a owl:ObjectProperty ;
     rdfs:domain ipn:OrganismeFormation ;
     rdfs:range acrt:Certification .
+
+ipn:aCommeProfessionnel a owl:ObjectProperty ;
+    rdfs:domain ipn:Acteur ;
+    rdfs:range ipn:Professionnels .
+
+ipn:aCommeApprenant a owl:ObjectProperty ;
+    rdfs:domain ipn:Acteur ;
+    rdfs:range ipn:Apprenant .
+
 
 #############################################
 # DATATYPE PROPERTIES
