@@ -14,7 +14,33 @@ class Apprenant {
   +string financeurProgramme
 }
 
-class Professionnel {
+class OrganismeFormation {
+  +string nom
+  +string adresse
+  +string email
+  +string telephone
+  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
+  +string statutJuridique        %% privé, public, association, SCIC
+  +string codeAPE
+  +string secteurActivite
+  +string contactRH
+  +string siteWeb
+}
+
+class Entreprise {
+  +string nom
+  +string adresse
+  +string email
+  +string telephone
+  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
+  +string statutJuridique        %% privé, public, association, SCIC
+  +string codeAPE
+  +string secteurActivite
+  +string contactRH
+  +string siteWeb
+}
+
+class StrucutreAccompagement {
   +string nom
   +string adresse
   +string email
@@ -55,23 +81,15 @@ class Formation {
   +bool isSurPlace()
 }
 
-class Indicateur {
-  +string nom
-  +string definition
-  +string unite
-  +float valeur
-  +int annee
-  +float calculerIndicateur()
-  +float comparaisonAnneePrecedente()
-  +bool estConforme()
-}
+
 
 %% Relations simplifiées
 Apprenant --> Formation : suit
 Apprenant --> ContratDeTravail : a
-Professionnel --> ContratDeTravail : propose
-Formation --> Professionnel : dispensée par
-Indicateur --> Apprenant : mesure
-Indicateur --> Professionnel : mesure
+Apprenant --> Entreprise : signeContrat
+Entreprise --> ContratDeTravail : propose
+Entreprise --> OrganismeFormation : parternaire
+Formation --> OrganismeFormation : dispensée par
+
 
 ```
