@@ -67,7 +67,6 @@ class Formation {
 %% Relations simplifiées
 Apprenant --> Formation : suit
 Apprenant --> ContratDeTravail : a
-Apprenant --> Entreprise : signeContrat
 Apprenant --> OrganismeFormation : inscrit
 Entreprise --> ContratDeTravail : propose
 ContratDeTravail --> OrganismeFormation : contient
