@@ -15,14 +15,16 @@ class Apprenant {
 }
 
 class OrganismeFormation {
+  +string nom
   +string adresse
   +string email
   +string telephone
-  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
   +string intituleFormation    
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
+  +string contactRH
+  +string siteWeb
 }
 
 class Entreprise {
