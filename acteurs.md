@@ -18,8 +18,7 @@ class OrganismeFormation {
   +string nom
   +string adresse
   +string email
-  +string telephone
-  +string intituleFormation    
+  +string telephone    
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
