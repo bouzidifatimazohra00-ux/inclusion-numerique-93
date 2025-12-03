@@ -9,22 +9,20 @@ class Apprenant {
   +int age
   +string genre
   +string niveauEtudes
-  +string programmeSuivi
+  +string intituleFormation
   +string typeDispositif
   +string financeurProgramme
 }
 
 class OrganismeFormation {
-  +string nom
   +string adresse
   +string email
   +string telephone
   +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
+  +string intituleFormation    
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
-  +string contactRH
-  +string siteWeb
 }
 
 class Entreprise {
@@ -32,7 +30,6 @@ class Entreprise {
   +string adresse
   +string email
   +string telephone
-  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
@@ -42,14 +39,13 @@ class Entreprise {
 
 class ContratDeTravail {
   -Apprenant aCommeApprenant
-  -Professionnel aCommeEntreprise
-  -Professionnel aCommeOrganismeFormation
+  -Entreprise aCommeEntreprise
+  -OrganismeFormation aCommeOrganismeFormation
   +string idContrat
   +string typeContrat
   +date dateDebut
   +date dateFin
   +string statut
-  +string apprenantAssocie
   +float calculerSalaire()     
   +bool estActif()
   +int dureeContrat()
