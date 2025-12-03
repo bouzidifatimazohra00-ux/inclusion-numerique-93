@@ -62,7 +62,6 @@ class ContratDeTravail {
   +date dateDebut
   +date dateFin
   +string statut
-  +string apprenantAssocie
   +float calculerSalaire()     
   +bool estActif()
   +int dureeContrat()
