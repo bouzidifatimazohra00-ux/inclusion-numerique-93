@@ -9,7 +9,7 @@ class Apprenant {
   +int age
   +string genre
   +string niveauEtudes
-  +string intituleFormation
+  +Formation intituleFormation
   +string typeDispositif
   +string financeurProgramme
 }
@@ -54,8 +54,7 @@ class ContratDeTravail {
 }
 
 class Formation {
-  -Apprenant aCommeApprenant
-  -Professionnel aCommeOrganismeFormation
+  -OrganismeFormation aCommeOrganismeFormation
   +string intituleFormation
   +string certification
   +date dateDebut
