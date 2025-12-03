@@ -9,7 +9,7 @@ class Apprenant {
   +int age
   +string genre
   +string niveauEtudes
-  +string programmeSuivi
+  +string intituleFormation
   +string typeDispositif
   +string financeurProgramme
 }
@@ -19,7 +19,7 @@ class OrganismeFormation {
   +string adresse
   +string email
   +string telephone
-  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
+  +string intituleFormation    
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
@@ -32,7 +32,6 @@ class Entreprise {
   +string adresse
   +string email
   +string telephone
-  +string typeProfessionnel      %% OrganismeFormation, Entreprise, StructureAccompagnatrice
   +string statutJuridique        %% privé, public, association, SCIC
   +string codeAPE
   +string secteurActivite
@@ -59,6 +58,7 @@ class ContratDeTravail {
   -Professionnel aCommeOrganismeFormation
   +string idContrat
   +string typeContrat
+  +string secteurActivite
   +date dateDebut
   +date dateFin
   +string statut
