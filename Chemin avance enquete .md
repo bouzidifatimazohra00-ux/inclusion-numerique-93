@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 gantt
     title A Gantt Diagram
     dateFormat  YYYY-MM-DD
@@ -25,4 +25,4 @@ gantt
 
     section Blocked Period (Holidays)
     Blocked: 2025-12-22, 13d
-'''
+```
