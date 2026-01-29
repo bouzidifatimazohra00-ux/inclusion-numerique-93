@@ -1,6 +1,6 @@
 ```mermaid
 gantt
-    title Enquête : Insertion Professionnelle (Konexio)
+    title Enquête : Insertion Professionnelle après Formation Numérique
     dateFormat  YYYY-MM-DD
     
     section Cadrage & Recherche
