@@ -20,4 +20,5 @@ gantt
     Entretiens & Diffusion       :active, t8, 2026-01-05, 30d
     Analyse des résultats        :t9, after t8, 15d
     Synthèse finale              :t10, after t9, 10d
-```
+
+``` 
