@@ -19,9 +19,7 @@
 
 “Quels sont les éléments permettant d’apprécier une situation lorsqu’il est question d’éthique et d’agents autonomes ?” ([“Ethique et agents autonomes”, p. 6](zotero://select/library/items/N783PN4F)) ([pdf](zotero://open-pdf/library/items/F6CCPFAD?page=6&annotation=8E2XUBN4)) Quels sont les pré-requis pour evaluer les questions éthiques d'une agent autonome?
 
-“L” ([“Ethique et agents autonomes”, p. 9](zotero://select/library/items/N783PN4F)) ([pdf](zotero://open-pdf/library/items/F6CCPFAD?page=9&annotation=KL4UDL5L))
-
-“es « valeurs » ou « cadres éthiques » représentés et simulés dans une machine constituent bien des représentations, des simplifications, des interprétations de concepts complexes – tout comme le sont les « émotions » que l’on peut faire simuler à un robot : en aucun cas la machine ne sera « morale » ou « éthique »” ([“Ethique et agents autonomes”, p. 9](zotero://select/library/items/N783PN4F)) ([pdf](zotero://open-pdf/library/items/F6CCPFAD?page=9&annotation=IL4UD9HD))
+“Les « valeurs » ou « cadres éthiques » représentés et simulés dans une machine constituent bien des représentations, des simplifications, des interprétations de concepts complexes – tout comme le sont les « émotions » que l’on peut faire simuler à un robot : en aucun cas la machine ne sera « morale » ou « éthique »” ([“Ethique et agents autonomes”, p. 9](zotero://select/library/items/N783PN4F)) ([pdf](zotero://open-pdf/library/items/F6CCPFAD?page=9&annotation=IL4UD9HD))
 
 “oit aussi être en mesure de nous amener à considérer que dans le contexte de sociétés pluralistes, la référence à la nature sacrée de l'humanité n'est plus convaincante pour tout le monde.” ([“Ethique et agents autonomes”, p. 9](zotero://select/library/items/N783PN4F)) ([pdf](zotero://open-pdf/library/items/F6CCPFAD?page=9&annotation=PYWKEDJQ)) Il n'y a pas une forme, façon de ethique
 
