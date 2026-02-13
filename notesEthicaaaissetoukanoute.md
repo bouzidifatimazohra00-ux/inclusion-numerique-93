@@ -1,4 +1,5 @@
 # Annotations  
+Lien vers le PDF : https://www.zotero.org/aissetou_k/collections/QF4JDF9J/items/66I5MN8F/attachment/TZHPCZTV/reader
 (11/02/2026 10:29:02)
 
 « L’éthique nous invite à intégrer le fait que ce qui est technologiquement possible n’est pas toujours humainement ou socialement souhaitable » ([“Ethique et agents autonomes”, p. 5](zotero://select/library/items/66I5MN8F)) ([pdf](zotero://open-pdf/library/items/TZHPCZTV?page=5&annotation=UXMEN2VL))
