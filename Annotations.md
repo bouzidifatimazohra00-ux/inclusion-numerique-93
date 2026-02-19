@@ -1,0 +1,50 @@
+# Annotations  
+(19/02/2026, 22:25:47)
+
+“l’intégrité, la dignité et la durabilité” ([Maurel, p. 4](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=4&annotation=HXQJEIV7)) Cette proposition est particulièrement pragmatique, offre une boussole très opérationnelle pour les décideurs, les concepteurs et les citoyens, facilitant ainsi son application concrète au quotidien.
+
+“La deuxième proposition consiste à prendre de la hauteur sur ce modèle pour constater qu’il ne permet pas de sortir de l’approche strictement « principiste » ou « principielle » de l’éthique de l’intelligence artificielle.” ([Maurel, p. 5](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=5&annotation=ANKCCSEP)) Établir une liste de bonnes intentions ne suffit pas ; l'éthique nécessite une remise en question permanente, surtout face à une technologie qui évolue aussi vite que l'IA générative.
+
+“L’éthique est un questionnement quant à son propre comportement, et même un processus de questionnement. La borner à une série de principes pas toujours clairs à propos desquels il conviendrait de s’interroger ne fait que figer le questionnement, lequel doit au contraire être évolutif.” ([Maurel, p. 5](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=5&annotation=ZR2EEW3P)) L’éthique ne doit pas être une simple conformité ("cocher des cases"), mais doit rester un **processus de questionnement évolutif** sur son propre comportement.
+
+“La troisième proposition consiste à tirer les leçons de ce qui précède. Cela consiste essentiellement à ralentir pour réfléchir.” ([Maurel, p. 5](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=5&annotation=XP42XG9G)) Prendre du temp pour evaluer l'usafe est unact responsable politiquement et ecologiquement
+
+“Les Assises s’ouvraient donc avec un double enjeu comme boussole : ne pas en rester aux listes de principes, et ralentir (ou s’asseoir, comme y invitent des Assises !) pour mieux réfléchir. Incidemment, il s’est donc agi de cibler les meilleurs usages – selon des critères à construire collectivement – et interroger l’intérêt des autres.” ([Maurel, p. 5](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=5&annotation=5ZY7LBRZ))
+
+“technosolutionnisme” ([Maurel, p. 6](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=6&annotation=S8DM73WE)) Le technosolutionnisme, ou solutionnisme technique, **est la confiance dans la technologie pour résoudre un problème quelle qu'en soit la nature**
+
+“Il était à vrai dire temps de changer de logique : après les principes émergeants, souvent de manière volontaire et à leur initiative, pour encadrer le développement d’outils d’IA par les concepteurs et promoteurs de ces systèmes, il fallait que les usagers – notamment publics – s’organisent pour y faire face.” ([Maurel, p. 7](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=7&annotation=JPW9MKQT)) **Le basculement de l'éthique vers la déontologie**
+
+“La science n’est pas parfaite. Elle est souvent mal utilisée. C’est seulement un outil, mais c’est le meilleur outil que nous ayons” ([Maurel, p. 25](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=25&annotation=WRFP2REB))
+
+“peut-on encore parler de connaissance scientifique lorsque les processus de raisonnement, justification et d’interprétation sont en partie réalisés par des systèmes d’IA ?” ([Maurel, p. 26](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=26&annotation=PWUMNGCY))
+
+“ne pollution intellectuelle” ([Maurel, p. 26](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=26&annotation=29IEWTD4)) iondant la littérature scientifique de travaux de mauvaise qualité, inexacts ou plagiés
+
+“paper mills” ([Maurel, p. 27](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=27&annotation=2HA6GWSF)) La chnagement des modèle economique conduite à un fertification des article scienctifique. Les auteur est met sous-pression d'avoir publication. Les barometre universitaire pour la recherhche est contruite autour des index de publication
+
+“lles exploitent une insatisfaction structurelle des chercheurs devant les difficultés pour publier régulièrement et rapidement afin de franchir les barrières traditionnelles de la publication académique,” ([Maurel, p. 27](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=27&annotation=Z5A74SWL)) La difficulté est réel mais le risque de  biais d'automatisations est aussi présente. il y a une tendance dangereuse des utilisateurs à accepter aveuglément les réponses de la machine en perdant leur esprit critique
+
+“nhérents au processus d’entraînement, aux données exploitées ainsi qu’aux algorithmes sous-jacents, les résultats produits par les systèmes d’IA générative peuvent contenir des erreurs, manquer de pertinence ou encore être complètement faux.” ([Maurel, p. 27](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=27&annotation=WIP46HCC)) Cela montre la role de l'homme de valider les information. C'est ousjour le cas, quelque soit par un ordinatuer ou par un autre personne.
+
+“Les données constituent la matière première essentielle des systèmes à base d’apprentissage machine, sources de performances, de précision, mais en même temps de fragilité” ([Maurel, p. 28](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=28&annotation=M4R3C3SR)) c'est qussi un point faible d'IA. Que passe -t-il  si les données sont erroné ou peu qualitatif
+
+“L’utilisation massive des systèmes d’IA fondés sur des techniques d’apprentissage machine renforce ainsi la circulation de données, et parmi elles des données qui ne devraient pas être divulguées, accentuant ainsi les zones de vulnérabilité.” ([Maurel, p. 28](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=28&annotation=B27SI88E))
+
+“Si l’utilisateur souhaite s’y opposer, il doit le mentionner expressément, basé sur le mécanisme de l’opt-out – le consentement est présumé, à moins que la personne n’exprime son refus explicite – à l’inverse de l’optin qui nécessite un accord explicite avant que les données ne soient recueillies.” ([Maurel, p. 28](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=28&annotation=NVNQHQ92)) Un partique pour recueilli des données pour entrainement. C'est necessaire de le faire mais pas ethique en term de transparant utilisatuer
+
+“Plus récemment, a été adopté le règlement européen sur l’IA (RIA) – première législation générale au monde sur l’intelligence artificielle – visant à encadrer le développement, la mise sur le marché et l’utilisation des systèmes d’IA.” ([Maurel, p. 29](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=29&annotation=FEB2SKQ5)) Une fois qu'une donnée est absorbée par une IA pour son apprentissage, l'application du RGPD devient techniquement inopérante
+
+“ou encore du droit de rectification, qui permet quant à lui ou à toute personne de faire rectifier, actualiser les informations la concernant lorsqu’ont été décelées des erreurs ou des inexactitudes par exemple ?” ([Maurel, p. 29](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=29&annotation=H9CRKABJ)) l est en effet extrêmement complexe d'effacer une donnée ou de faire « désapprendre » un système d'IA sans altérer l'ensemble de son fonctionnement
+
+“d’un travail humain d’interprétation, de contextualisation et de validation par les pairs.” ([Maurel, p. 29](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=29&annotation=WUP44T84)) Mettre en valeur la travail de l'humain
+
+“Une tension se dessine entre, d’une part, la culture contemporaine de l’immédiateté, qui peut pousser en sciences à obtenir et publier des résultats rapidement, et, d’autre part, les exigences propres à la recherche scientifique, qui requièrent recul, réflexion et temporalité longue.” ([Maurel, p. 30](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=30&annotation=KUMX8SMC)) UN grand paradox. Nous produitons de plus en plus de connnaissance et nous n'avons pas assezz temps de de tous comprendre
+
+“Sensibiliser les chercheurs et la société civile aux enjeux éthiques des usages des systèmes d’IA fondés sur les techniques d’apprentissage machine.” ([Maurel, p. 30](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=30&annotation=EGQZJL76)) Verification sera le mot du jour pour l'era IA
+
+“Mener des recherches scientifiques visant à évaluer le « gain de temps » des chercheurs faisant usage des systèmes d’IA fondés sur de l’apprentissage machine.” ([Maurel, p. 30](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=30&annotation=K6K43R33)) Je suis daccord. IA peut etre outil avec des reflexion, c'est le plus important de la recherche
+
+“Protéger les données de recherche.” ([Maurel, p. 31](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=31&annotation=ZYJIP4LY)) Nous pouvons d'avoir un service IA generative privée. Bien qu'il sera moin puissance, mais c'est un bonne question de comprendre nos besoins et construire un méthode de travail au tour cet outil
+
+“Développer des infrastructures ouvertes et collectivement gouvernées.” ([Maurel, p. 31](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=31&annotation=SDKGRDDG)) POur donner le choix, et la transparence pour l'outil
