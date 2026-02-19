@@ -1,5 +1,5 @@
 # Annotations  
-(19/02/2026, 22:25:47)
+(18/02/2026, 22:25:47)
 
 “l’intégrité, la dignité et la durabilité” ([Maurel, p. 4](zotero://select/library/items/G2XZX6MB)) ([pdf](zotero://open-pdf/library/items/N6H8S2LV?page=4&annotation=HXQJEIV7)) Cette proposition est particulièrement pragmatique, offre une boussole très opérationnelle pour les décideurs, les concepteurs et les citoyens, facilitant ainsi son application concrète au quotidien.
 
