@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     %% Style Général
     classDef avant fill:#fcf8e3,stroke:#f0ad4e,stroke-width:2px,color:#8a6d3b;
@@ -24,3 +25,4 @@ graph TD
     class B1,B2,B3 après;
     class B4 important;
     class A5,B5 recruteur;
+```
